@@ -1,0 +1,30 @@
+.nf-sbform {
+  position: relative;
+  height: 60px;
+}
+
+.nf-sbform input[type="text"] {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  display: block;
+  margin: 0;
+  width: 20px;
+  padding: 30px 20px;
+  height: 40px;
+}
+.nf-sbform.nf-sbopen input[type="text"] {
+  padding: 30px 75px 30px 20px;
+  width: 100%;
+}
+
+.nf-sbform input[type="submit"] {
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+}
