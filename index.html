@@ -6,15 +6,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Search Box test</title>
-
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="./js/searchBox.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      $('#form1').searchBox();
+      $('#form1').nfSearchBox();
     });
   </script>
-
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/layout.css" rel="stylesheet">
   <link href="./css/theme.css" rel="stylesheet">
@@ -24,7 +22,7 @@
       color: #fff;
       margin: 0;
       padding: 20px;
-      background: #2c3e50;
+      background: #666;
     }
     .container {
       margin: 0 auto;
@@ -32,17 +30,14 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
       <h2>searchBox Demo</h2>
-
       <form id="form1" class="nf-sbform" action="/" method="get">
         <input type="text" name="q" placeholder="Enter search here...">
         <input type="submit" value="">
       </form>
-      <br/>
-      <br/>
+      <br/><br/><br/><br/><br/><br/>
       <input type="button" id="extra_button" value="Nevermind this button...">
   </div>
 </body>

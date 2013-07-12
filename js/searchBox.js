@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.searchBox = function() {
+  $.fn.nfSearchBox = function() {
     var self = this,
       open = false,
       leaving = false,
