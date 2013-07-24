@@ -1,12 +1,12 @@
 (function($) {
   $.fn.nfSearchBox = function() {
     var self = this,
-      open = false,
+      open = self.hasClass('nf-sbopen'),
       leaving = false,
       txt = this.children('input[type="text"]'),
-      sub = this.children('input[type="submit"]');
-    sub.click(function (ev) {
-      ev.preventDefault();
+      sub = this.children('input[type="submit"]'),
+      span = this.children('span');
+    span.click(function (ev) {
       if(open){
         if(txt.val().length > 0){
           leaving = true;
@@ -16,7 +16,7 @@
       else {
         self.addClass('nf-sbopen');
         txt.focus();
-        open = true;
+        setTimeout(function () { open = true; }, 300);
       }
     });
     txt.focusout(function () {
@@ -27,6 +27,8 @@
         }
       },100);
     });
+    span.show();
+    sub.hide();
     self.addClass('nf-sbform nf-sbclose');
   };
 }(jQuery));

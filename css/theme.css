@@ -8,7 +8,7 @@
   outline: none;
 }
 
-.nf-sbform input[type="submit"] {
+.nf-sbform input[type="submit"], span.nf-search-button {
   color: #fff;
   background: url('../img/mag.png') center center no-repeat #e67e22;
   cursor: pointer;
